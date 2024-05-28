@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Юрий Боков](https://up.htmlacademy.ru/htmlcss/40/user/2526241).
-* Наставник: [Виктор Рыбаков] (https://htmlacademy.ru/profile/viktor-rybakov).
-* Сайт: [Мой проект "Седона"] (https://bokovium.github.io/2526241-sedona-40/).
+* Наставник: [Виктор Рыбаков](https://htmlacademy.ru/profile/viktor-rybakov).
+* Сайт: [Мой проект "Седона"](https://bokovium.github.io/2526241-sedona-40/).
 
 ---
 
