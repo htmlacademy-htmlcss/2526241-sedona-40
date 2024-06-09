@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона: город в Аризоне</title>
   </head>
 
   <body>
@@ -105,6 +105,7 @@
           <h3>Найдено гостиниц:38</h3>
           <select class="select-price" aria-label="Сортировка цены">
             <option>Сначала дешевые</option>
+            <option>Сначала дорогие</option>
           </select>
           <ul class="appearance-change-list">
             <li class="appearance-change-list-item"><a href="cataloge.html?view=tile"><img src="#"
@@ -122,9 +123,7 @@
               <h4>Amara Resort & Spa</h4>
               <p class="accomodation-type">Гостиница</p>
               <p class="accomodation-price">От 4000 ₽</p>
-              <form action="#">
-                <button class="button-brown">Подробнее</button>
-              </form>
+              <a href="#" class="button-brown">Подробнее</a>
               <button class="button-blue">В избранное</button>
               <p class="stars">4 звезды</p>
               <p class="rating">Рейтинг: 8,5</p>
@@ -136,9 +135,7 @@
               <h4>Villas at Poco Diablo</h4>
               <p class="accomodation-type">Гостиница</p>
               <p class="accomodation-price">От 5000 ₽</p>
-              <form action="#">
-                <button class="button-brown">Подробнее</button>
-              </form>
+              <a href="#" class="button-brown">Подробнее</a>
               <button class="button-blue">В избранное</button>
               <p class="stars">4 звезды</p>
               <p class="rating">Рейтинг: 9,2</p>
@@ -150,9 +147,7 @@
               <h4>Desert Quail Inn</h4>
               <p class="accomodation-type">Гостиница</p>
               <p class="accomodation-price">От 2500 ₽</p>
-              <form action="#">
-                <button class="button-brown">Подробнее</button>
-              </form>
+              <a href="#" class="button-brown">Подробнее</a>
               <button class="button-green">В избранном</button>
               <p class="stars">3 звезды</p>
               <p class="rating">Рейтинг: 6,9</p>
@@ -164,9 +159,7 @@
               <h4>GreenTree Inn</h4>
               <p class="accomodation-type">Гостиница</p>
               <p class="accomodation-price">От 1500 ₽</p>
-              <form action="#">
-                <button class="button-brown">Подробнее</button>
-              </form>
+              <a href="#" class="button-brown">Подробнее</a>
               <button class="button-blue">В избранное</button>
               <p class="stars">2 звезды</p>
               <p class="rating">Рейтинг: 5,0</p>
@@ -174,20 +167,34 @@
           </li>
         </ul>
         <div class="pagination">
-          <a class="active-pagination">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a>...</a>
-          <a href="#">10</a>
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="active-pagination">1</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a>...</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">10</a>
+            </li>
+          </ul>
         </div>
       </section>
       <footer class="subscribe" data-test="subscribe">
         <p class="title-white">Подпишитесь на рассылку</p>
         <p class="small-title-white">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subsribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="subscribe-form-email">Email</label>
-          <input id="subscribe-form-email" type="email" name="subscribe-form-email" placeholder="Ваш e-mail">
+          <label class="visually-hidden">Email</label>
+          <input type="email" name="subscribe-form-email" placeholder="Ваш e-mail">
           <button type="submit" class="button">Подписаться</button>
         </form>
       </footer>
