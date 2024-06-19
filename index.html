@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона: город в Аризоне</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <header class="page-header" data-test="header">
       <nav class="main-navigation">
@@ -13,9 +13,9 @@
           <img src="images/logo.png" width="140" height="70" alt="Логотип Седона" class="main-logo">
         </a>
         <ul class="main-navigation-list">
-          <li class="main-navigation-item"><a href="#">Главная</a></li>
-          <li class="main-navigation-item"><a href="#">О Седоне</a></li>
-          <li class="main-navigation-item"><a href="catalog.html">Гостиницы</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link" href="#">Главная</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link" href="#">О Седоне</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link" href="catalog.html">Гостиницы</a></li>
         </ul>
         <ul class="user-navigation-list">
           <li class="user-navigation-item">
@@ -24,14 +24,14 @@
           <li class="user-navigation-item">
             <a href="#"><span class="visually-hidden">Избранное 12</span></a>
           </li>
+          <li><a class="button-brown" href="#">Хочу сюда!</a></li>
         </ul>
-        <a class="button-brown" href="#">Хочу сюда!</a>
       </nav>
     </header>
     <main class="page-main" data-test="main">
       <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Качественный отдых для гостей Седоны</h1>
-        <img src="images/tagline.svg" width="458" height="352"
+        <img class="tagline" src="images/tagline.svg" width="458" height="352"
           alt="Welcome to the georgious Sedona, because the Grand Canyon sucks">
       </section>
       <section class="advantages" data-test="advantages">
@@ -66,16 +66,16 @@
         <p class="small-title">Опытный персонал и качественное обслуживание!</p>
         <ul class="advice-list">
           <li class="advice-list-item">
-            <h3 class="advice-list-item-title">Жилье</h3>
+            <h3 class="advice-list-item-title icon-house">Жилье</h3>
             <p class="advice-list-item-description">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
           </li>
           <li class="advice-list-item">
-            <h3 class="advice-list-item-title">Еда</h3>
+            <h3 class="advice-list-item-title icon-food">Еда</h3>
             <p class="advice-list-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="advice-list-item">
-            <h3 class="advice-list-item-title">Сувениры</h3>
+            <h3 class="advice-list-item-title icon-souvenirs">Сувениры</h3>
             <p class="advice-list-item-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
@@ -85,15 +85,15 @@
         <p class="title">Заинтересовались?</p>
         <p class="small-title">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
-        <button type="button" class="button">Поиск гостиницы в Седоне</button>
+        <button type="button" class="search-button">Поиск гостиницы в Седоне</button>
       </section>
       <footer class="subscribe" data-test="subscribe">
-        <h2>Подпишитесь на рассылку</h2>
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="small-title-white">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subsribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-form-email">Email</label>
-          <input id="subscribe-form-email" type="email" name="subscribe-form-email" placeholder="Ваш e-mail">
-          <button type="submit" class="button">Подписаться</button>
+          <input class="input-email" id="subscribe-form-email" type="email" name="subscribe-form-email" placeholder="Ваш e-mail">
+          <button type="submit" class="subscribe-button">Подписаться</button>
         </form>
       </footer>
     </main>
@@ -109,7 +109,7 @@
           <a href="#" target="_blank" rel="noreferrer noopener"><span class="visually-hidden">YouTube</span></a>
         </li>
       </ul>
-      <a class="phone" href="tel:+78128121212">+7(812)812-12-12</a>
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener"><img src="images/HTML-Academy.svg"
           width="114.9" height="32.9" alt="htmlacademy"></a>
     </footer>
