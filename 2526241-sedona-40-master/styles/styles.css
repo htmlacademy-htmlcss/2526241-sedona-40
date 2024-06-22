@@ -20,9 +20,10 @@ body {
   line-height: 26px;
   background-color: #FFFFFF;
   color: #000000;
+  margin: 0 auto;
+  padding: 0;
   width: 1200px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -106,14 +107,6 @@ body {
   text-align: center;
 }
 
-.advantages-list-item-title {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .advantages-list-item {
   background-color: #83B3D3;
   color: #FFFFFF;
@@ -129,6 +122,13 @@ body {
   color: inherit;
 }
 
+.advantages-list-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 .advantages-list-item-description {
   font-size: 18px;
@@ -137,29 +137,58 @@ body {
 }
 
 .advice-list {
-  list-style: none;
   display: flex;
-  padding: 0;
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
   margin: 0;
+  padding: 0;
 }
 
-.advice-list-item {
-  width: 230px;
-  padding-top: 81px;
-  padding-left: 85px;
-  padding-right: 85px;
-  padding-bottom:81px;
-  text-align: center;
+.small-title {
+  margin-bottom: 64px;
+  margin-top: 20px;
+}
+
+
+.advice-list-item-1 {
+  justify-content: center;
+  width: 400px;
+  height: 350px;
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url(../images/icons/house.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+
+.advice-list-item-2 {
+  justify-content: center;
+  width: 400px;
+  height: 350px;
+  background-image: url(../images/icons/burger.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+
+.advice-list-item-3 {
+  justify-content: center;
+  width: 400px;
+  height: 350px;
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url(../images/icons/souvenir.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
 }
 
 .advice-list-item-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  list-style: none;
   text-transform: uppercase;
-  margin-top:102px;
-  margin-bottom:30px;
+  text-align: center;
+  margin-top: 183px;
+  margin-bottom: 30px;
 }
 
 .advice-list-item-description {
@@ -167,21 +196,12 @@ body {
   line-height: 21px;
   font-weight: 400;
   text-align: center;
-  word-break: normal;
   margin-top: 0;
-
-}
-
-.advice-list-item:nth-child(odd) {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-list-item:nth-child(even) {
-  background-color: rgba(255, 255, 255, 1);
 }
 
 .search {
   text-align: center;
+  margin-top: 0;
 }
 
 .search-button {
