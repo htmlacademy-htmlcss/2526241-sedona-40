@@ -9,10 +9,10 @@
 
   <body>
     <header class="page-header" data-test="header">
+      <a>
+        <img src="images/logo.png" width="140" height="70" alt="Логотип Седона" class="main-logo">
+      </a>
       <nav class="main-navigation">
-        <a>
-          <img src="images/logo.png" width="140" height="70" alt="Логотип Седона" class="main-logo">
-        </a>
         <ul class="main-navigation-list">
           <li class="main-navigation-item"><a class="main-navigation-link" href="index.html">Главная</a></li>
           <li class="main-navigation-item"><a class="main-navigation-link" href="#">О Седоне</a></li>
@@ -20,13 +20,13 @@
         </ul>
         <ul class="user-navigation-list">
           <li class="user-navigation-item">
-            <a href="#"><span class="visually-hidden">Поиск</span></a>
+            <a class="search-icon" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="user-navigation-item">
-            <a href="#"><span class="visually-hidden">Избранное 12</span></a>
+            <a class="heart-icon" href="#"><span class="visually-hidden">Избранное</span></a>
           </li>
+          <li><a class="button-brown" href="#">Хочу сюда!</a></li>
         </ul>
-        <a class="button-brown" href="#">Хочу сюда!</a>
       </nav>
     </header>
     <main data-test="filter">

@@ -6,12 +6,13 @@
     <title>Седона: город в Аризоне</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <header class="page-header" data-test="header">
+      <a>
+        <img src="images/logo.png" width="140" height="70" alt="Логотип Седона" class="main-logo">
+      </a>
       <nav class="main-navigation">
-        <a>
-          <img src="images/logo.png" width="140" height="70" alt="Логотип Седона" class="main-logo">
-        </a>
         <ul class="main-navigation-list">
           <li class="main-navigation-item"><a class="main-navigation-link" href="#">Главная</a></li>
           <li class="main-navigation-item"><a class="main-navigation-link" href="#">О Седоне</a></li>
@@ -19,10 +20,10 @@
         </ul>
         <ul class="user-navigation-list">
           <li class="user-navigation-item">
-            <a href="#"><span class="visually-hidden">Поиск</span></a>
+            <a class="search-icon" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="user-navigation-item">
-            <a href="#"><span class="visually-hidden">Избранное 12</span></a>
+            <a class="heart-icon" href="#"><span class="visually-hidden">Избранное</span></a>
           </li>
           <li><a class="button-brown" href="#">Хочу сюда!</a></li>
         </ul>
@@ -49,11 +50,11 @@
             <p class="advantages-list-item-description">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages-list-item">
-            <h3 class="advantages-list-item-title">Красивая дорога</h3>
+            <h3 class="advantages-list-item-title">Красивая<br>дорога</h3>
             <p class="advantages-list-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-list-item">
-            <h3 class="advantages-list-item-title">Мало туристов</h3>
+            <h3 class="advantages-list-item-title">Мало<br>туристов</h3>
             <p class="advantages-list-item-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-list-item">
@@ -66,33 +67,37 @@
         <p class="small-title">Опытный персонал и качественное обслуживание!</p>
         <ul class="advice-list">
           <li class="advice-list-item">
-            <h3 class="advice-list-item-title icon-house">Жилье</h3>
-            <p class="advice-list-item-description">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
+            <div class="icon-house"></div>
+            <h3 class="advice-list-item-title">Жилье</h3>
+            <p class="advice-list-item-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
           </li>
           <li class="advice-list-item">
-            <h3 class="advice-list-item-title icon-food">Еда</h3>
-            <p class="advice-list-item-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+            <div class="icon-food"></div>
+            <h3 class="advice-list-item-title">Еда</h3>
+            <p class="advice-list-item-description">Всегда заказывайте топовый фирменный бургер,вы не разочаруетесь!
             </p>
           </li>
           <li class="advice-list-item">
-            <h3 class="advice-list-item-title icon-souvenirs">Сувениры</h3>
-            <p class="advice-list-item-description">Не только китайского, но и настоящего местного производства!</p>
+            <div class="icon-souvenirs"></div>
+            <h3 class="advice-list-item-title">Сувениры</h3>
+            <p class="advice-list-item-description">Не только китайского,<br>но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
       <section class="search" data-test="search">
         <h2 class="visually-hidden">Бронирование гостиницы в Седоне</h2>
         <p class="title">Заинтересовались?</p>
-        <p class="small-title">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
+        <p class="small-title">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
         <button type="button" class="search-button">Поиск гостиницы в Седоне</button>
       </section>
       <footer class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="small-title-white">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subsribe-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="subsсribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-form-email">Email</label>
-          <input class="input-email" id="subscribe-form-email" type="email" name="subscribe-form-email" placeholder="Ваш e-mail">
+          <input class="input-email" id="subscribe-form-email" type="email" name="subscribe-form-email"
+            placeholder="Ваш e-mail">
           <button type="submit" class="subscribe-button">Подписаться</button>
         </form>
       </footer>
@@ -100,13 +105,13 @@
     <footer class="main-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-list-item">
-          <a href="#" target="_blank" rel="noreferrer noopener"><span class="visually-hidden">Вконтакте</span></a>
+          <a class="vk-icon" href="#" target="_blank" rel="noreferrer noopener"><span class="visually-hidden">Вконтакте</span></a>
         </li>
         <li class="social-list-item">
-          <a href="#" target="_blank" rel="noreferrer noopener"><span class="visually-hidden">Telegram</span></a>
+          <a  class="tg-icon" href="#" target="_blank" rel="noreferrer noopener"><span class="visually-hidden">Telegram</span></a>
         </li>
         <li class="social-list-item">
-          <a href="#" target="_blank" rel="noreferrer noopener"><span class="visually-hidden">YouTube</span></a>
+          <a class="yt-icon" href="#" target="_blank" rel="noreferrer noopener"><span class="visually-hidden">YouTube</span></a>
         </li>
       </ul>
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
