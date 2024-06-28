@@ -834,14 +834,25 @@ input::placeholder {
 .catalog-list-item-card {
   text-align: center;
   padding: 20px;
-  border: 1px solid rgba(230, 230, 230, 1);
+  box-shadow: 0 0 1px 1px rgba(230, 230, 230, 1);
   width: 300px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: auto auto auto auto auto;
+  column-gap: 20px;
+  row-gap: 16px;
+  grid-template-areas: "a a"
+                       "b b"
+                       "c d"
+                       "e f"
+                       "g h";
 }
 
 .hotel-name {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  grid-area: b;
 }
 
 .accomodation-type {
@@ -850,6 +861,7 @@ input::placeholder {
   font-weight: 400;
   margin: 0;
   padding: 0;
+  grid-area: c;
 }
 
 .accomodation-price {
@@ -858,6 +870,7 @@ input::placeholder {
   font-weight: 400;
   margin: 0;
   padding: 0;
+  grid-area: d;
 }
 
 .rating {
@@ -873,11 +886,25 @@ input::placeholder {
   padding-top: 9px;
   padding-bottom: 8px;
   margin:0;
+  grid-area: h;
 }
 
 .stars {
   margin: 0;
   padding: 0;
+  grid-area: g;
+}
+
+.catalog-list-item-card .button-brown {
+  grid-area: f;
+}
+
+.catalog-list-item-card .button-blue {
+  grid-area:e;
+}
+
+.catalog-list-item-card .button-green {
+  grid-area:e;
 }
 
 .pagination-item {
