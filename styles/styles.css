@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -23,6 +27,9 @@ body {
   width: 1200px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .visually-hidden {
@@ -133,10 +140,15 @@ margin-right: 28px;
   text-transform: uppercase;
   border-radius: 4px;
   border: 0;
+  width: 140px;
 }
 
 .page-main {
   width: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .hero {
@@ -264,10 +276,6 @@ margin-right: 28px;
 
 .advice-list-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-list-item:nth-child(even) {
-  background-color: rgba(255, 255, 255, 1);
 }
 
 .icon-house {
@@ -460,23 +468,85 @@ margin-right: 28px;
 }
 
 .filter {
-  background-image: url("../images/catalog-b.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #FFFFFF;
+ color: #FFFFFF;
+ padding-top: 35px;
+ padding-right: 70px;
+ padding-left: 70px;
+ padding-bottom: 70px;
+ background-image: url("../images/catalog-b.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
 }
 
 .filter-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  padding-top: 35px;
+  margin:0;
+}
+
+.breadcrumb-list {
+  margin:0;
+  display: flex;
+  list-style: none;
+  position: relative;
+  margin-bottom: 40px;
 }
 
 .breadcrumb-list-item {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
+  width: 73px;
+}
+
+.breadcrumb-link-index{
+  content:"";
+  display: block;
+  background-image: url("../images/icons/home.svg");
+  min-width: 13px;
+  min-height: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFFFFF;
+}
+
+.breadcrumb-link-hotels::before {
+  content:"";
+  display: block;
+  background-image: url("../images/icons/arrow.svg");
+  min-width: 13px;
+  min-height: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 13px;
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  left: 90px;
+  color:inherit;
+  rotate: -90deg;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.filter-infrastructure {
+margin: 0;
+padding: 0;
+border: none;
+margin-right: 70px;
+}
+
+.filter-accomodation {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-right: 140.15px;
 }
 
 .filter-infrastructure-title,
@@ -484,6 +554,19 @@ margin-right: 28px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.filter-accomodation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-infrastructure-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-accomodation-list-item,
@@ -491,12 +574,91 @@ margin-right: 28px;
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.filter-price {
+  border: 0;
+  padding: 0;
 }
 
 .filter-price-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin-top: 40px;
+}
+
+.filter-group {
+  display: flex;
+  padding-top: 32px;
+}
+
+.filter-group-input-min {
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  width: 86px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 4px 0 0 4px;
+  border:0;
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: 0;
+  order: -2;
+  font-weight: 700;
+}
+
+.filter-group-input-max {
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  width: 86px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 4px 0 0 4px;
+  border:0;
+  font-size: 18px;
+  margin-right: 0;
+  order: 1;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.label-from {
+  background-color: rgba(242, 242, 242, 1);
+  color: rgba(0, 0, 0, 0.3);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 20px;
+  order: -1;
+  margin-right: 2px;
+  text-transform: lowercase;
+  border-radius: 0 4px 4px 0;
+}
+
+.label-to {
+  background-color: rgba(242, 242, 242, 1);
+  color: rgba(0, 0, 0, 0.3);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 20px;
+  order: 2;
+  text-transform: lowercase;
+  border-radius: 0 4px 4px 0;
+}
+
+input::placeholder {
+  color: #000000;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  padding-top: 56px;
+  padding-left: 70px;
+  padding-bottom: 8px;
 }
 
 .button-blue {
@@ -507,13 +669,15 @@ margin-right: 28px;
   text-decoration: none;
   background-color: rgba(130, 179, 211, 1);
   color: #FFFFFF;
-  padding-left: 34px;
-  padding-right: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
   text-transform: uppercase;
   border-radius: 4px;
   border: 0;
+  width: 140px;
+  white-space: nowrap;
 }
 
 .button-green {
@@ -524,8 +688,8 @@ margin-right: 28px;
   text-decoration: none;
   background-color: rgba(125, 181, 79, 1);
   color: #FFFFFF;
-  padding-left: 34px;
-  padding-right: 34px;
+  padding-left: 18px;
+  padding-right: 18px;
   padding-top: 8px;
   padding-bottom: 8px;
   text-transform: uppercase;
@@ -548,12 +712,130 @@ margin-right: 28px;
   text-transform: uppercase;
   border-radius: 4px;
   border: 0;
+  margin-top: 32px;
+}
+
+.catalog {
+  margin: 0;
+  padding-top: 58.5px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom:80px ;
+}
+
+.catalog-header {
+  display: flex;
+  flex-direction: row;
+  height: 49px;
+  width: max-content;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .select-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  display: block;
+  padding-top: 6.5px;
+  margin-right: 200px;
+}
+
+.select-price {
+  border:2px solid rgba(229, 229, 229, 1);
+  border-radius:4px;
+  font-family: inherit;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 20px;
+  width: 292px;
+  height: 49px;
+}
+
+.appearance-change-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.appearance-change-list-item {
+  margin-right: 8px;
+}
+
+.appearance-change-list-item:nth-child(1) {
+  margin-left: 70px;
+}
+
+.appearance-change-list-item:last-child {
+  margin-right: 0;
+}
+
+.type-link-1 {
+  display: block;
+  content: "";
+  padding: 17px 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-image: url("../images/icons/variant-tile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 14px;
+  min-width: 16px;
+}
+
+.type-link-2 {
+  display: block;
+  content: "";
+  padding: 17px 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-image: url("../images/icons/variant-slideshow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 14px;
+  min-width: 16px;
+}
+
+.type-link-3 {
+  display: block;
+  content: "";
+  padding: 17px 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-image: url("../images/icons/variant-list.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 14px;
+  min-width: 16px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 20px;
+  margin: 40px 0;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+.catalog-list-item-card {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  width: 300px;
 }
 
 .hotel-name {
@@ -566,12 +848,16 @@ margin-right: 28px;
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 .accomodation-price {
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 .rating {
@@ -586,6 +872,12 @@ margin-right: 28px;
   text-align: center;
   padding-top: 9px;
   padding-bottom: 8px;
+  margin:0;
+}
+
+.stars {
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-item {

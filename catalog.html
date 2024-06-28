@@ -33,14 +33,14 @@
       <div class="filter">
         <h1 class="filter-title">Гостиницы Седоны</h1>
         <ol class="breadcrumb-list">
-          <li class="breadcrumb-list-item">
+          <li class="breadcrumb-list-item breadcrumb-link-index">
             <a href="index.html"><span class="visually-hidden">Главная страница</span></a>
           </li>
-          <li class="breadcrumb-list-item">
+          <li class="breadcrumb-list-item breadcrumb-link-hotels">
             <a>Гостиницы</a>
           </li>
         </ol>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="filter-infrastructure">
             <legend class="filter-infrastructure-title">Инфраструктура:</legend>
             <ul class="filter-infrastructure-list">
@@ -89,47 +89,42 @@
           </fieldset>
           <fieldset class="filter-price">
             <legend class="filter-price-title">Стоимость, ₽:</legend>
-            <label>
-              <input type="text" name="price" id="min-price" placeholder="0">
-              <span>от</span>
-            </label>
-            <label>
-              <input type="text" name="price" id="max-price" placeholder="9000">
-              <span>до</span>
-            </label>
+            <div class="filter-group">
+              <label class="label-from" for="min-price">От</label>
+              <input class="filter-group-input-min" type="text" name="price" id="min-price" placeholder="0">
+              <label class="label-to" for="max-price">До</label>
+              <input class="filter-group-input-max" type="text" name="price" id="max-price" placeholder="9000">
+            </div>
           </fieldset>
-          <button type="submit" class="button-blue">Применить</button>
-          <button type="reset" class="button-transparent">Сбросить</button>
+          <div class="filter-buttons">
+            <button type="submit" class="button-blue">Применить</button>
+            <button type="reset" class="button-transparent">Сбросить</button>
+          </div>
         </form>
       </div class="filter">
       <section class="catalog" data-test="catalog">
         <h2 class="visually-hidden">Результаты фильтрации гостиниц</h2>
-        <header>
+        <header class="catalog-header">
           <h3 class="select-title">Найдено гостиниц:38</h3>
           <select class="select-price" aria-label="Сортировка цены">
             <option>Сначала дешевые</option>
             <option>Сначала дорогие</option>
           </select>
           <ul class="appearance-change-list">
-            <li class="appearance-change-list-item"><a href="cataloge.html?view=tile"><img
-                  src="images/icons/variant-tile.svg" width="16px" height="14px" alt="Изменение вида на плитку"></a>
-            </li>
-            <li class="appearance-change-list-item"><a href="cataloge.html?view=card"><img
-                  src="images/icons/variant-slideshow.svg" width="16px" height="14px"
-                  alt="Изменение вида на карточку"></a></li>
-            <li class="appearance-change-list-item"><a href="cataloge.html?view=list"><img src="images/icons/variant-list.svg"
-                  alt="Изменение вида на список"></a></li>
+            <li class="appearance-change-list-item"><a class="type-link-1" href="cataloge.html?view=tile"></a></li>
+            <li class="appearance-change-list-item"><a class="type-link-2" href="cataloge.html?view=card"></a></li>
+            <li class="appearance-change-list-item"><a class="type-link-3" href="cataloge.html?view=list"></a></li>
           </ul>
         </header>
         <ul class="catalog-list">
           <li class="catalog-list-item">
             <article class="catalog-list-item-card">
-              <img src="images/amara-resort.jpg" width="300" height="212" alt="Отель Amara Resort & Spa">
+              <img class="hotel-photo" src="images/amara-resort.jpg" width="300" height="212" alt="Отель Amara Resort & Spa">
               <h4 class="hotel-name">Amara Resort & Spa</h4>
               <p class="accomodation-type">Гостиница</p>
               <p class="accomodation-price">От 4000 ₽</p>
               <a href="#" class="button-brown">Подробнее</a>
-              <button class="button-blue">В избранное</button>
+              <button type="button" class="button-blue">в избранное</button>
               <p class="stars">4 звезды</p>
               <p class="rating">Рейтинг: 8,5</p>
             </article>
@@ -137,7 +132,7 @@
           <li class="catalog-list-item">
             <article class="catalog-list-item-card">
               <img src="images/poco-diablo.jpg" width="300" height="212" alt="Отель Villas at Poco Diablo">
-              <h4>Villas at Poco Diablo</h4>
+              <h4 class="hotel-name">Villas at Poco Diablo</h4>
               <p class="accomodation-type">Гостиница</p>
               <p class="accomodation-price">От 5000 ₽</p>
               <a href="#" class="button-brown">Подробнее</a>
@@ -149,7 +144,7 @@
           <li class="catalog-list-item">
             <article class="catalog-list-item-card">
               <img src="images/qail-inn.jpg" width="300" height="212" alt="Отель Desert Quail Inn">
-              <h4>Desert Quail Inn</h4>
+              <h4 class="hotel-name">Desert Quail Inn</h4>
               <p class="accomodation-type">Гостиница</p>
               <p class="accomodation-price">От 2500 ₽</p>
               <a href="#" class="button-brown">Подробнее</a>
@@ -161,7 +156,7 @@
           <li class="catalog-list-item">
             <article class="catalog-list-item-card">
               <img src="images/green-tree.jpg" width="300" height="212" alt="Отель GreenTree Inn">
-              <h4>GreenTree Inn</h4>
+              <h4 class="hotel-name">GreenTree Inn</h4>
               <p class="accomodation-type">Гостиница</p>
               <p class="accomodation-price">От 1500 ₽</p>
               <a href="#" class="button-brown">Подробнее</a>
