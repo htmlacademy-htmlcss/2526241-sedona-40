@@ -50,6 +50,7 @@ display: block;
 margin-top: 0;
 margin-bottom: -6px;
 margin-right: 28px;
+position: relative;
 }
 
 .page-header {
@@ -179,11 +180,20 @@ margin-right: 28px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 69px;
+  padding-left: 290px;
+  padding-right: 290px;
+  padding-bottom: 25px;
 }
 
 .small-title {
   color: #333333;
   text-align: center;
+  padding-left: 274.5px;
+  padding-right: 274.5px;
+  padding-top: 0;
+  padding-bottom: 69px;
 }
 
 .advantages-list {
@@ -216,6 +226,30 @@ margin-right: 28px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+}
+
+.advantages-list-item:nth-child(1) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.advantages-list-item:nth-child(5) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title-desk-cafe {
+  padding-right: 85px;
+  padding-top: 100px;
+  padding-left: 85px;
+  padding-bottom: 100px;
+}
+
+.title-desk-bridge {
+  padding-right: 85px;
+  padding-top: 100px;
+  padding-left: 85px;
+  padding-bottom: 100px;
 }
 
 .advantages-list-item:nth-child(even) {
@@ -853,6 +887,8 @@ input::placeholder {
   line-height: 28px;
   font-weight: 700;
   grid-area: b;
+  margin: 0;
+  text-align: left;
 }
 
 .accomodation-type {
@@ -862,6 +898,7 @@ input::placeholder {
   margin: 0;
   padding: 0;
   grid-area: c;
+  text-align: left;
 }
 
 .accomodation-price {
@@ -871,6 +908,7 @@ input::placeholder {
   margin: 0;
   padding: 0;
   grid-area: d;
+  text-align: right;
 }
 
 .rating {
@@ -893,32 +931,69 @@ input::placeholder {
   margin: 0;
   padding: 0;
   grid-area: g;
+  background-image: url("../images/icons/star.svg");
+  background-repeat: space;
+  background-position: center;
+}
+
+.stars-2 {
+  width: calc(2*21px);
+}
+
+.stars-3 {
+  width: calc(3*21px);
+}
+
+.stars-4 {
+  width: calc(4*21px);
 }
 
 .catalog-list-item-card .button-brown {
   grid-area: f;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 .catalog-list-item-card .button-blue {
   grid-area:e;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 .catalog-list-item-card .button-green {
   grid-area:e;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.pagination {
+  padding-top: 40px;
+  border-top: 1px solid rgba(230, 230, 230, 1);
 }
 
 .pagination-item {
   background-color: rgba(130, 179, 211, 1);
   color: #FFFFFF;
   text-decoration: none;
-  height: 60px;
-  width: 60px;
+  border-radius: 4px;
+  flex-basis: 60px;
 }
 
 .pagination-item-link {
   color: inherit;
   text-decoration: inherit;
-  vertical-align: middle;
+  display: block;
+  padding: 12px;
+  text-align: center;
+}
+
+.pagination-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
 }
 
 .pagination-item:nth-child(1) {
