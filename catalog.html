@@ -33,8 +33,8 @@
       <div class="filter">
         <h1 class="filter-title">Гостиницы Седоны</h1>
         <ol class="breadcrumb-list">
-          <li class="breadcrumb-list-item breadcrumb-link-index">
-            <a href="index.html"><span class="visually-hidden">Главная страница</span></a>
+          <li class="breadcrumb-list-item">
+            <a class="breadcrumb-link-index" href="index.html"><span class="visually-hidden">Главная страница</span></a>
           </li>
           <li class="breadcrumb-list-item breadcrumb-link-hotels">
             <a>Гостиницы</a>
@@ -90,8 +90,10 @@
           <fieldset class="filter-price">
             <legend class="filter-price-title">Стоимость, ₽:</legend>
             <div class="filter-group">
+              <div class="condition-from" tabindex="0">
               <label class="label-from" for="min-price">От</label>
               <input class="filter-group-input-min" type="text" name="price" id="min-price" placeholder="0">
+              </div>
               <label class="label-to" for="max-price">До</label>
               <input class="filter-group-input-max" type="text" name="price" id="max-price" placeholder="9000">
             </div>

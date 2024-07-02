@@ -93,6 +93,20 @@ position: relative;
   color: inherit;
 }
 
+.main-navigation-link:hover, .main-navigation-link:focus {
+  color: rgba(117, 97, 87, 1);
+}
+
+.border-link {
+  border-bottom: 2px solid rgba(117, 98, 87, 1);
+  padding-bottom: 17px;
+  cursor: inherit;
+}
+
+.border-link:active, .border-link:hover, .border-link:focus {
+  color: inherit;
+}
+
 .user-navigation-list {
   display: flex;
   flex-direction: row;
@@ -104,26 +118,51 @@ position: relative;
 .user-navigation-item {
   padding: 0 13px;
   align-self: center;
+  position: relative;
+  display: block;
 }
 
-.search-icon::before {
-  background-image: url("../images/icons/search.svg");
-  display: block;
-  min-width: 20px;
-  min-height: 20px;
-  content: "";
-  background-position: center;
-  background-repeat: no-repeat;
+.user-navigation-item:hover, .user-navigation-item:focus {
+  color: rgba(117, 98, 87, 1);
 }
 
-.heart-icon::before {
-  background-image: url("../images/icons/heart.svg");
+.svg-link-search {
+display: block;
+position: relative;
+top: 3px;
+right: 28px;
+color: #000000;
+}
+
+.svg-link-heart {
   display: block;
-  min-width: 20px;
-  min-height: 20px;
-  content: "";
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+  top: 3px;
+  right: 28px;
+  color: #000000;
+}
+
+.svg-link-heart:hover, .svg-link-heart:focus, .svg-link-search:hover, .svg-link-search:focus {
+  color: rgba(117, 97, 87, 1)
+}
+
+.svg-link-heart:active, .svg-link-search:active {
+  color:rgba(117, 97, 87, 0.3)
+}
+
+.likes-counter {
+  position: absolute;
+  padding: 5px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  background-color: rgba(125, 181, 79, 1);
+  color: #FFFFFF;
+  right: -8px;
+  top: -10px;
+
 }
 
 .button-brown {
@@ -142,6 +181,15 @@ position: relative;
   border-radius: 4px;
   border: 0;
   width: 140px;
+}
+
+.button-brown:hover, .button-brown:focus {
+  background-color: rgba(97, 80, 72, 1);
+}
+
+.button-brown:active {
+  background-color: rgba(117, 97, 87, 1);
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .page-main {
@@ -532,35 +580,18 @@ position: relative;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
-  width: 73px;
 }
 
 .breadcrumb-link-index{
   content:"";
   display: block;
   background-image: url("../images/icons/home.svg");
-  min-width: 13px;
-  min-height: 15px;
   background-repeat: no-repeat;
   background-position: center;
   color: #FFFFFF;
-}
-
-.breadcrumb-link-hotels::before {
-  content:"";
-  display: block;
-  background-image: url("../images/icons/arrow.svg");
-  min-width: 13px;
-  min-height: 15px;
-  background-repeat: no-repeat;
-  background-position: center;
   width: 13px;
-  height: 15px;
-  position: absolute;
-  top: 5px;
-  left: 90px;
-  color:inherit;
-  rotate: -90deg;
+  height: 13px;
+  padding-left: 12px;
 }
 
 .filter-form {
@@ -651,7 +682,6 @@ margin-right: 70px;
   padding-bottom: 12px;
   width: 86px;
   background-color: rgba(242, 242, 242, 1);
-  border-radius: 4px 0 0 4px;
   border:0;
   font-size: 18px;
   margin-right: 0;
@@ -663,28 +693,40 @@ margin-right: 70px;
 .label-from {
   background-color: rgba(242, 242, 242, 1);
   color: rgba(0, 0, 0, 0.3);
-  padding-top: 12px;
+  padding-top: 9px;
   padding-bottom: 12px;
   padding-right: 20px;
   order: -1;
-  margin-right: 2px;
   text-transform: lowercase;
-  border-radius: 0 4px 4px 0;
+
 }
 
 .label-to {
   background-color: rgba(242, 242, 242, 1);
   color: rgba(0, 0, 0, 0.3);
-  padding-top: 12px;
+  padding-top: 9px;
   padding-bottom: 12px;
   padding-right: 20px;
   order: 2;
   text-transform: lowercase;
   border-radius: 0 4px 4px 0;
+  display: block;
+}
+
+.condition-from {
+  display: flex;
+  margin-right: 2px;
+}
+
+.condition-from:focus {
+  box-shadow: 0 0 0 2px rgba(131, 179, 211, 1);
+  border-radius: 4px 0 0 4px;
+  outline: none;
 }
 
 input::placeholder {
   color: #000000;
+  text-align: left;
 }
 
 .filter-buttons {
@@ -982,9 +1024,11 @@ input::placeholder {
 .pagination-item-link {
   color: inherit;
   text-decoration: inherit;
-  display: block;
-  padding: 12px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
 }
 
 .pagination-list {
