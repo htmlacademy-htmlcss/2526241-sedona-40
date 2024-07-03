@@ -665,6 +665,7 @@ margin-right: 70px;
   padding-top: 12px;
   padding-left: 20px;
   padding-bottom: 12px;
+  padding-right: 0;
   width: 86px;
   background-color: rgba(242, 242, 242, 1);
   border-radius: 4px 0 0 4px;
@@ -672,56 +673,71 @@ margin-right: 70px;
   font-size: 18px;
   line-height: 24px;
   margin-right: 0;
-  order: -2;
+  order: -1;
   font-weight: 700;
+}
+
+.filter-group-input-min:focus {
+  outline: none;
 }
 
 .filter-group-input-max {
   padding-top: 12px;
   padding-left: 20px;
   padding-bottom: 12px;
+  padding-right: 0;
   width: 86px;
   background-color: rgba(242, 242, 242, 1);
   border:0;
   font-size: 18px;
   margin-right: 0;
-  order: 1;
   line-height: 24px;
   font-weight: 700;
+}
+
+.filter-group-input-max:focus {
+  outline: none;
 }
 
 .label-from {
   background-color: rgba(242, 242, 242, 1);
   color: rgba(0, 0, 0, 0.3);
-  padding-top: 9px;
-  padding-bottom: 12px;
-  padding-right: 20px;
-  order: -1;
   text-transform: lowercase;
+  border-radius: 4px 0 0 4px ;
+  margin-right: 2px;
+}
 
+.label-from:has(:focus){
+  box-shadow: 0 0 0 2px rgba(131, 179, 211, 1);
+  border-radius: 4px 0 0 4px;
+}
+
+.label-to:has(:focus) {
+  box-shadow: 0 0 0 2px rgba(131, 179, 211, 1);
+  border-radius: 0 4px 4px 0;
 }
 
 .label-to {
   background-color: rgba(242, 242, 242, 1);
   color: rgba(0, 0, 0, 0.3);
-  padding-top: 9px;
+  text-transform: lowercase;
+  border-radius: 0 4px 4px 0 ;
+}
+
+.text-label {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 0;
+  padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 20px;
-  order: 2;
-  text-transform: lowercase;
-  border-radius: 0 4px 4px 0;
-  display: block;
+  text-align: center;
 }
 
 .condition-from {
   display: flex;
   margin-right: 2px;
-}
-
-.condition-from:focus {
-  box-shadow: 0 0 0 2px rgba(131, 179, 211, 1);
-  border-radius: 4px 0 0 4px;
-  outline: none;
 }
 
 input::placeholder {
