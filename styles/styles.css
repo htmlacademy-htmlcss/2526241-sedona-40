@@ -185,6 +185,7 @@ color: #000000;
 
 .button-brown:hover, .button-brown:focus {
   background-color: rgba(97, 80, 72, 1);
+  outline: none;
 }
 
 .button-brown:active {
@@ -426,6 +427,18 @@ color: #000000;
   margin-bottom: 96px;
 }
 
+.search-button:hover, .search-button:focus {
+  background-color: rgba(97, 80, 72, 1);
+  outline: none;
+  cursor: pointer;
+}
+
+.search-button:active {
+  background-color:rgba(117, 97, 87, 1);
+  color:rgba(255, 255, 255, 0.3);
+  ;
+}
+
 .subscribe {
   background-image: url(../images/background-blured.jpg);
   background-color: cadetblue;
@@ -468,13 +481,30 @@ color: #000000;
   background-color: #F2F2F2;
   border-radius: 4px 0 0 4px;
   border: 0;
+  color: rgba(0, 0, 0, 1);
+  padding-inline: 20px;
+  padding-block: 0;
+  padding-inline-end: 0;
 }
 
 .input-email::placeholder {
-  padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 345px;
+}
+
+.input-email:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.input-email:focus {
+  background-color: rgba(230, 230, 230, 1);
+  box-shadow: 0 0 0 3px rgba(131, 179, 211, 1);
+  outline: none;
+}
+
+.input-email:active {
+  outline: none;
 }
 
 .subscribe-button {
@@ -490,6 +520,18 @@ color: #000000;
   padding-right: 50px;
   border-radius: 0 4px 4px 0;
   border: 0;
+}
+
+.subscribe-button:hover, .subscribe-button:focus {
+  background-color: rgba(104, 162, 202, 1);
+  outline: none;
+  cursor: pointer;
+}
+
+.subscribe-button:active {
+  background-color: rgba(104, 162, 202, 1);
+  color:rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .main-footer {
@@ -511,34 +553,28 @@ color: #000000;
   list-style: none;
 }
 
-.vk-icon::before {
-  display: block;
+.soc-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 47px;
   height: 40px;
-  content: "";
-  background-image: url("../images/icons/vk.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.tg-icon::before {
-  display: block;
-  width: 47px;
-  height: 40px;
-  content: "";
-  background-image: url("../images/icons/tg.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.soc-icon .soc-svg {
+  fill: rgba(131, 179, 211, 1);
 }
 
-.yt-icon::before {
-  display: block;
-  width: 47px;
-  height: 40px;
-  content: "";
-  background-image: url("../images/icons/yt.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.soc-icon:hover .soc-svg {
+  fill:  rgba(104, 162, 202, 1);
+}
+
+.soc-icon:focus {
+  outline: none;
+}
+
+.soc-icon:focus .soc-svg {
+  fill: rgba(104, 162, 202, 1);
 }
 
 .phone {
@@ -547,6 +583,28 @@ color: #000000;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+.phone:hover, .phone:focus {
+  color:rgba(117, 97, 87, 1);
+  outline: none;
+}
+
+.academy-link .academy-svg {
+  fill:rgba(0, 0, 0, 1)
+}
+
+.academy-link:focus {
+  outline: none;
+}
+
+.academy-link:hover .academy-svg,
+.academy-link:focus .academy-svg {
+  fill:rgba(117, 97, 87, 1);
+}
+
+.academy-link:active .academy-svg {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .filter {
