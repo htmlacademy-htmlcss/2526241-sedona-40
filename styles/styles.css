@@ -51,6 +51,7 @@ body {
   margin-bottom: -6px;
   margin-right: 28px;
   position: relative;
+  cursor: pointer;
 }
 
 .page-header {
@@ -81,9 +82,12 @@ body {
 }
 
 .main-navigation-item {
-  padding: 0 16px;
+  padding-right: 32px;
+  padding-bottom: 2px;
   align-self: center;
 }
+
+
 
 .main-navigation-link {
   font-size: 20px;
@@ -101,7 +105,7 @@ body {
 
 .border-link {
   border-bottom: 2px solid rgba(117, 98, 87, 1);
-  padding-bottom: 17px;
+  padding-bottom: 19px;
   cursor: inherit;
 }
 
@@ -136,8 +140,8 @@ body {
 .svg-link-search {
   display: block;
   position: relative;
-  top: 3px;
-  right: 28px;
+  top: 2px;
+  right: 16px;
   color: #000000;
 }
 
@@ -145,7 +149,7 @@ body {
   display: block;
   position: relative;
   top: 3px;
-  right: 28px;
+  right: 19px;
   color: #000000;
 }
 
@@ -228,12 +232,28 @@ body {
   margin-top: 0;
 }
 
-
 .tagline {
   margin-top: 51px;
   margin-bottom: 82px;
   margin-left: 371px;
   margin-right: 372px;
+}
+
+.firts-tag .title {
+  padding-top: 70px;
+  padding-left: 290px;
+  padding-right: 290px;
+  padding-bottom: 25px;
+}
+
+.second-tag .title {
+  padding-top: 64px;
+  padding-bottom: 12px;
+}
+
+.second-tag .small-title {
+  padding-top: 10px;
+  margin-bottom: 0;
 }
 
 .title {
@@ -243,7 +263,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 69px;
+  padding-top: 70px;
   padding-left: 290px;
   padding-right: 290px;
   padding-bottom: 25px;
@@ -255,7 +275,9 @@ body {
   padding-left: 274.5px;
   padding-right: 274.5px;
   padding-top: 0;
-  padding-bottom: 69px;
+  padding-bottom: 64px;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .advantages-list {
@@ -360,7 +382,7 @@ body {
   height: 2px;
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
-  top: 200px;
+  top: 197px;
   right: 170px;
 }
 
@@ -381,7 +403,7 @@ body {
   height: 2px;
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
-  top: 200px;
+  top: 197px;
   right: 170px;
 }
 
@@ -390,7 +412,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 96px;
+  margin-bottom: 29px;
 }
 
 .advice-list-item {
@@ -398,7 +420,7 @@ body {
   padding-top: 81px;
   padding-left: 85px;
   padding-right: 85px;
-  padding-bottom: 81px;
+  padding-bottom: 63px;
   text-align: center;
 }
 
@@ -419,6 +441,7 @@ body {
   text-align: center;
   word-break: normal;
   margin-top: 0;
+  white-space: nowrap;
 
 }
 
@@ -458,14 +481,9 @@ body {
 }
 
 .search .title {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 28px;
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: 20px;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .search .small-title {
@@ -473,12 +491,11 @@ body {
   line-height: 26px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 54px;
-  margin-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 29px;
 }
 
 .search .search-button {
+  font-family: "PT Sans";
   font-size: 20px;
   line-height: 36px;
   text-align: center;
@@ -517,6 +534,7 @@ body {
   text-align: center;
   margin-top: 0;
   padding: 96px;
+  padding-bottom: 104px;
 }
 
 .subscribe-title {
@@ -527,6 +545,7 @@ body {
   color: #FFFFFF;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .small-title-white {
@@ -543,7 +562,7 @@ body {
 }
 
 .input-email {
-  width: 452px;
+  width: 432px;
   height: 52px;
   font-weight: 400;
   font-size: 18px;
@@ -561,6 +580,8 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 345px;
+  color:  rgba(0, 0, 0, 0.6);
+  font-family: "PT Sans";
 }
 
 .input-email:hover {
@@ -578,6 +599,7 @@ body {
 }
 
 .subscribe-button {
+  font-family: "PT Sans";
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -609,7 +631,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 45px;
+  padding-top: 48px;
   padding-bottom: 35px;
   padding-left: 70px;
   padding-right: 70px;
