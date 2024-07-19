@@ -704,9 +704,9 @@ body {
 .filter {
   color: #FFFFFF;
   padding-top: 35px;
-  padding-right: 70px;
+  padding-right: 50px;
   padding-left: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 57px;
   background-image: url("../images/catalog-b.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -718,6 +718,7 @@ body {
   line-height: 78px;
   font-weight: 700;
   margin: 0;
+  margin-top: -2px;
 }
 
 .breadcrumb-list {
@@ -745,7 +746,8 @@ body {
   width: 15px;
   height: 13px;
   color: #F2F2F2;
-  margin-left: 3px;
+  margin-left: -1px;
+  margin-top: 0;
 }
 
 .breadcrumb-link-index:hover{
@@ -761,7 +763,6 @@ body {
   opacity: 0.3;
 }
 
-
 .hotels-text:before {
   content: "";
   display: block;
@@ -774,8 +775,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   fill: #FFFFFF;
-  top: 2px;
-  left: -14px;
+  top: 3px;
+  left: -17px;
 }
 
 
@@ -785,6 +786,7 @@ body {
   font-weight: 400;
   position: relative;
   margin-right: 20px;
+  margin-top: 8px;
 }
 
 .checkbox-input {
@@ -893,14 +895,16 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  margin-right: 70px;
+  margin-right: 66px;
+  margin-left: -2px;
 }
 
 .filter-accomodation {
   margin: 0;
   padding: 0;
   border: none;
-  margin-right: 140.15px;
+  margin-right: 148.15px;
+  margin-left: 2px;
 }
 
 .filter-infrastructure-title {
@@ -938,7 +942,7 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  margin-bottom: 18px;
+  margin-bottom: 13px;
 }
 
 .filter-price {
@@ -957,7 +961,7 @@ body {
 
 .filter-group {
   display: flex;
-  padding-top: 32px;
+  padding-top: 31px;
 }
 
 .filter-group-input-min {
@@ -1070,12 +1074,13 @@ input::placeholder {
 .filter-buttons {
   display: flex;
   flex-direction: column;
-  padding-top: 58.5px;
-  padding-left: 60px;
+  padding-top: 56.5px;
+  padding-left: 68px;
   padding-bottom: 8px;
 }
 
 .filter-buttons .button-blue {
+  font-family: "PT Sans";
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -1154,6 +1159,7 @@ input::placeholder {
 }
 
 .button-transparent {
+  font-family: "PT Sans";
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -1190,7 +1196,7 @@ input::placeholder {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.3);
   height: 4px;
-  margin-top: 48px;
+  margin-top: 43px;
   border-radius: 4px;
   position: relative;
 }
@@ -1240,7 +1246,7 @@ input::placeholder {
 
 .catalog {
   margin: 0;
-  padding-top: 58.5px;
+  padding-top: 48.5px;
   padding-left: 70px;
   padding-right: 70px;
   padding-bottom: 80px;
@@ -1275,7 +1281,7 @@ input::placeholder {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding-left: 20px;
+  padding-left: 19px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 20px;
@@ -1284,7 +1290,7 @@ input::placeholder {
   appearance: none;
   background-image: url("../images/icons/arrow.svg");
   background-repeat: no-repeat;
-  background-position: 260px center;
+  background-position: 255px center;
 }
 
 .select-price:hover,
@@ -1317,7 +1323,7 @@ input::placeholder {
 .type-link-1 {
   display: block;
   content: "";
-  padding: 17px 16px;
+  padding: 16px 15px;
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
   background-image: url("../images/icons/variant-tile.svg");
@@ -1330,7 +1336,7 @@ input::placeholder {
 .type-link-2 {
   display: block;
   content: "";
-  padding: 17px 16px;
+  padding: 16px 14px;
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
   background-image: url("../images/icons/variant-slideshow.svg");
@@ -1343,7 +1349,7 @@ input::placeholder {
 .type-link-3 {
   display: block;
   content: "";
-  padding: 17px 16px;
+  padding: 16px 14px;
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
   background-image: url("../images/icons/variant-list.svg");
@@ -1392,7 +1398,7 @@ input::placeholder {
   grid-template-columns: 140px 140px;
   grid-template-rows: auto auto auto auto auto;
   column-gap: 20px;
-  row-gap: 16px;
+  row-gap: 13px;
   grid-template-areas: "a a"
     "b b"
     "c d"
@@ -1404,7 +1410,6 @@ input::placeholder {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  grid-area: b;
   margin: 0;
   text-align: left;
   white-space: nowrap;
@@ -1414,6 +1419,7 @@ input::placeholder {
   text-transform: none;
   color: inherit;
   text-decoration: none;
+  grid-area: b;
 }
 
 .hotel-card-link:hover, .hotel-card-link:focus-visible {
@@ -1460,6 +1466,7 @@ input::placeholder {
 .stars {
   margin: 0;
   padding: 0;
+  padding-left: 6px;
   grid-area: g;
   background-image: url("../images/icons/star.svg");
   background-repeat: space;
@@ -1479,19 +1486,19 @@ input::placeholder {
 }
 
 .catalog-list-item-card .button-brown {
-  grid-area: f;
+  grid-area: e;
   padding-left: 1px;
   padding-right: 1px;
 }
 
 .catalog-list-item-card .button-blue {
-  grid-area: e;
+  grid-area: f;
   padding-left: 1px;
   padding-right: 1px;
 }
 
 .catalog-list-item-card .button-green {
-  grid-area: e;
+  grid-area: f;
   padding-left: 1px;
   padding-right: 1px;
 }
