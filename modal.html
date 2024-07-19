@@ -151,7 +151,7 @@
         </li>
       </ul>
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" rel="noreferrer noopener">
+      <a class="academy-link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
         <svg class="academy-svg" width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 13.2564V15.8564H2.5V13.2564H0Z"/>
           <path d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z"/>
@@ -168,6 +168,64 @@
           </svg>
       </a>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button" onclick="document.location='index.html'">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <div class="cont-modal">
+          <section class="search-block">
+            <h2 class="search-title">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="search-form-label-from" for="search-date-from">Дата Заезда:</label>
+              <div class="search-form-input-from-div"><input class="search-form-input-from" id="search-date-from" name="search-date-from" type="text"
+                value="27 апреля 2020" placeholder="Укажите дату"></div>
+                <span class="info-red">Мы не можем отправить вас в прошлое.</span>
+              <label class="search-form-label-to" for="search-date-to">Дата Выезда:</label>
+              <div class="search-form-input-to-div"></div><input class="search-form-input-to" id="search-date-to" name="search-date-to" type="text"
+                value="1 сентября 2021" placeholder="Укажите дату">
+                <span class="info-black">На эти даты пока есть свободные места. Пока есть.</span>
+              <label class="search-form-label-adults" for="search-adult">Взрослые:</label>
+              <div class="adults-plus-minus-button">
+                <button class="minus-button" type="button">
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <input class="input-numbers" id="search-adult" name="search-adult" type="number" value="2" min="1"
+                  max="99">
+                <button class="plus-button" type="button">
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+              </div>
+              <label class="search-form-label-kids" for="search-kids">Дети:
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
+                      </svg>
+                  </button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст
+                    которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span data-test="modal">
+              </label>
+                <span class="visually-hidden">Доп.информация</span>
+              </button>
+              <div class="kids-plus-minus-button">
+                <button class="minus-button" type="button">
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <input class="input-numbers" id="search-kids" name="search-kids" type="number" value="2" min="1"
+                  max="99">
+                <button class="plus-button" type="button">
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+              </div>
+            </form>
+            <button class="search-blue-button" type="button">Найти</button>
+          </section>
+        </div>
+      </div>
+    </div>
   </body>
 
 </html>
