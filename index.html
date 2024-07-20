@@ -10,8 +10,8 @@
 
   <body>
     <header class="page-header" data-test="header">
-      <a>
-        <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона" class="main-logo" href="#">
+      <a href="#">
+        <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона" class="main-logo">
       </a>
       <nav class="main-navigation">
         <ul class="main-navigation-list">
@@ -85,19 +85,16 @@
         <p class="small-title">Опытный персонал и качественное обслуживание!</p>
         </div>
         <ul class="advice-list">
-          <li class="advice-list-item">
-            <div class="icon-house"></div>
+          <li class="advice-list-item-house">
             <h3 class="advice-list-item-title">Жильё</h3>
             <p class="advice-list-item-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
           </li>
-          <li class="advice-list-item">
-            <div class="icon-food"></div>
+          <li class="advice-list-item-burger">
             <h3 class="advice-list-item-title">Еда</h3>
             <p class="advice-list-item-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!
             </p>
           </li>
-          <li class="advice-list-item">
-            <div class="icon-souvenirs"></div>
+          <li class="advice-list-item-souv">
             <h3 class="advice-list-item-title">Сувениры</h3>
             <p class="advice-list-item-description">Не только китайского,<br>но и настоящего местного<br>производства!</p>
           </li>
@@ -116,7 +113,7 @@
         <form class="subsсribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-form-email">Email</label>
           <input class="input-email" id="subscribe-form-email" type="email" name="subscribe-form-email"
-            placeholder="Ваш e-mail">
+            placeholder="Ваш e-mail" required>
           <button type="submit" class="subscribe-button">Подписаться</button>
         </form>
       </footer>

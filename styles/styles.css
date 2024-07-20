@@ -22,7 +22,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  background-color: #FFFFFF;
+  background-color: #f2f2f2;;
   color: #000000;
   width: 1200px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
@@ -65,6 +65,7 @@ body {
 
 .main-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
   font-size: 20px;
@@ -279,6 +280,10 @@ body {
   margin-bottom: 24px;
 }
 
+.advantages {
+  background-color: #FFFFFF;
+}
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -350,6 +355,9 @@ body {
 }
 
 .title-desk-cafe {
+  display: flex;
+  flex-direction: column;
+  height: auto;
   padding-right: 85px;
   padding-top: 102px;
   padding-left: 85px;
@@ -357,6 +365,9 @@ body {
 }
 
 .title-desk-bridge {
+  display: flex;
+  flex-direction: column;
+  height: auto;
   padding-right: 85px;
   padding-top: 100px;
   padding-left: 85px;
@@ -364,12 +375,14 @@ body {
 }
 
 .advantages-list-item:nth-child(even) {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(131, 179, 211, 0.12);
   color: inherit;
   padding: 112.5px 85px;
   margin: 0;
   width: 230px;
-  height: 160px;
+  height: auto;
   text-align: center;
   position: relative;
 }
@@ -386,12 +399,14 @@ body {
 }
 
 .advantages-list-item:nth-child(3) {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(131, 179, 211, 0.2);
   color: inherit;
   padding: 112.5px 85px;
   margin: 0;
   width: 230px;
-  height: 160px;
+  height: auto;
   position: relative;
 }
 
@@ -409,19 +424,50 @@ body {
 .advice-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 29px;
 }
 
-.advice-list-item {
+.advice-list-item-house {
   width: 230px;
-  padding-top: 81px;
+  padding-top: 152px;
   padding-left: 85px;
   padding-right: 85px;
   padding-bottom: 63px;
   text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../images/icons/house.svg");
+  background-repeat: no-repeat;
+  background-position: 165px 75px;
 }
+
+.advice-list-item-burger {
+  width: 230px;
+  padding-top: 152px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 63px;
+  text-align: center;
+  background-image: url("../images/icons/burger.svg");
+  background-repeat: no-repeat;
+  background-position: 165px 75px;
+}
+
+.advice-list-item-souv {
+  width: 230px;
+  padding-top: 152px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 63px;
+  text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../images/icons/souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: 170px 75px;
+}
+
+
 
 .advice-list-item-title {
   font-size: 24px;
@@ -440,7 +486,7 @@ body {
   text-align: center;
   word-break: normal;
   margin-top: 0;
-  white-space: nowrap;
+  width: 230px;
 
 }
 
@@ -477,12 +523,14 @@ body {
 
 .search {
   text-align: center;
+  background-color: #FFFFFF;
 }
 
 .search .title {
   font-size: 30px;
   font-weight: 700;
   line-height: 28px;
+  padding-top: 100px;
 }
 
 .search .small-title {
@@ -510,6 +558,8 @@ body {
   border: 0;
   margin-top: 0;
   margin-bottom: 96px;
+  margin-right: 412px;
+  margin-left: 412px;
 }
 
 .search-button:hover,
@@ -630,10 +680,22 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 35px;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: #FFFFFF;
+}
+
+.catalog-main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 150px;
   padding-bottom: 35px;
   padding-left: 70px;
   padding-right: 70px;
+  background-color: #FFFFFF;
 }
 
 .social-list {
@@ -710,6 +772,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: #FFFFFF;
 }
 
 .filter-title {
@@ -1065,7 +1128,7 @@ body {
   margin-right: 2px;
 }
 
-input::placeholder {
+.filter-form input::placeholder {
   color: #000000;
   text-align: left;
 }
@@ -1228,17 +1291,20 @@ input::placeholder {
   left: 206px;
 }
 
-.range-min-button:hover, .range-max-button:hover {
+.range-min-button:hover, 
+.range-max-button:hover {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
-.range-min-button:focus-visible, .range-max-button:focus-visible {
+.range-min-button:focus-visible, 
+.range-max-button:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(131, 179, 211, 1);
 }
 
-.range-min-button:active, .range-max-button:active {
+.range-min-button:active, 
+.range-max-button:active {
   outline: none;
   box-shadow: 0 0 0 2px rgba(131, 179, 211, 1);
 }
@@ -1248,17 +1314,18 @@ input::placeholder {
   padding-top: 48.5px;
   padding-left: 70px;
   padding-right: 70px;
-  padding-bottom: 130px;
+  padding-bottom: 155px;
+  background-color: #FFFFFF;
 }
 
 .catalog-header {
   display: flex;
   flex-direction: row;
-  height: 49px;
-  width: max-content;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 40px;
+  height: auto;
+  width: auto;
 }
 
 .select-title {
@@ -1269,7 +1336,7 @@ input::placeholder {
   margin: 0;
   display: block;
   padding-top: 6.5px;
-  margin-right: 200px;
+  margin-right: 198px;
 }
 
 .select-price {
@@ -1290,6 +1357,7 @@ input::placeholder {
   background-image: url("../images/icons/arrow.svg");
   background-repeat: no-repeat;
   background-position: 255px center;
+  background-color: transparent;
 }
 
 .select-price:hover,
@@ -1410,9 +1478,11 @@ input::placeholder {
   font-weight: 700;
   margin: 0;
   text-align: left;
-  white-space: nowrap;
+  white-space: wrap;
   grid-area: b;
   padding-top: 5px;
+  height: auto;
+  width: auto;
 }
 
 .hotel-link {
@@ -1421,7 +1491,8 @@ input::placeholder {
   text-decoration: none;
 }
 
-.hotel-link:hover, .hotel-link:focus-visible {
+.hotel-link:hover, 
+.hotel-link:focus-visible {
   outline: none;
   color: rgba(130, 179, 211, 1);
 }
@@ -1566,6 +1637,7 @@ input::placeholder {
 
 .subscribe-2 {
   color: #000000;
+  background-color: #FFFFFF;
 }
 
 .subscribe-title-2 {
@@ -1574,6 +1646,7 @@ input::placeholder {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 0;
 }
 
 .small-title-black {
@@ -1593,7 +1666,7 @@ input::placeholder {
 
 .modal {
   position: relative;
-  padding: 64px 70px;
+  padding: 74px 70px;
   margin: auto;
   background: #FFFFFF;
   border-radius: 30px;
@@ -1651,7 +1724,7 @@ input::placeholder {
   display: grid;
   gap: 0 20px;
   grid-template-columns: 119px 110px 180px 110px;
-  grid-template-rows: 48px 48px 48px 48px 48px;
+  grid-template-rows: 48px 48px 48px 48px 48px 48px 48px;
   align-items: center;
 }
 
@@ -1758,14 +1831,12 @@ input::placeholder {
 
 .minus-button {
   padding: 14px 10px;
-
   outline: none;
   border: transparent;
   border-radius: 4px;
-
   opacity: 1;
+  background-color: transparent;
 }
-
 
 .minus-button:focus-visible:before {
   box-shadow: 0 0 0 3px rgba(131, 179, 211, 1);
@@ -1788,7 +1859,6 @@ input::placeholder {
   border-radius: 4px;
   background-color: rgba(242, 242, 242, 1);
   margin-left: 0;
-
   grid-area: 5/2/5/2;
 }
 
@@ -1821,7 +1891,7 @@ input::placeholder {
 
 .plus-button {
   padding: 14px 10px;
-
+  background-color: transparent;
   outline: none;
   border: transparent;
   border-radius: 4px;
@@ -1867,10 +1937,8 @@ input::placeholder {
 
 .input-numbers {
   appearance: textfield;
-
   border: transparent;
   background-color: rgba(242, 242, 242, 1);
-
   text-align: center;
   font-size: 18px;
   line-height: 20px;
@@ -1879,15 +1947,15 @@ input::placeholder {
   min-width: 30px;
   min-height: 48px;
   margin-right: 2px;
-
   padding: 0;
+  
 }
 
-.input-numbers:hover, .input-numbers:focus-visible {
+.input-numbers:hover, 
+.input-numbers:focus-visible {
   outline: none;
   box-shadow: 0 0 0 2px rgba(131, 179, 211, 1);
   border-radius: 4px;
-
 }
 
 .input-numbers::-webkit-outer-spin-button,
@@ -1899,25 +1967,21 @@ input::placeholder {
 
 .search-blue-button {
   display: block;
-
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  padding-right: 252.5px;
+  padding-left: 252.5px;
   text-transform: uppercase;
   color: #FFFFFF;
-
   background-color: rgba(131, 179, 211, 1);
-
-
+  grid-area: 7/5/7/1;
+  margin-top: 8px;
   padding-bottom: 18px;
   padding-top: 18px;
   text-align: center;
-  margin-top: 48px;
-  padding-right: 252.5px;
-  padding-left: 256.5px;
 
-
-  border-radius: 4px;
+  border-radius: 10px;
   border-color: transparent;
   cursor: pointer;
 }

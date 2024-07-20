@@ -10,8 +10,8 @@
 
   <body>
     <header class="page-header" data-test="header">
-      <a>
-        <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона" class="main-logo" href="#">
+      <a href="#">
+        <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона" class="main-logo">
       </a>
       <nav class="main-navigation">
         <ul class="main-navigation-list">
@@ -171,7 +171,7 @@
 
     <div class="modal-container">
       <div class="modal modal-search">
-        <button class="modal-close-button" onclick="document.location='index.html'">
+        <button class="modal-close-button" type="button" onclick="document.location='index.html'">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <div class="cont-modal">
@@ -199,17 +199,16 @@
               </div>
               <label class="search-form-label-kids" for="search-kids">Дети:
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button">
+                  <button class="tooltip-toggle" type="button" id="search-kids">
                     <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
                       </svg>
                   </button>
                   <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст
                     которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-              </span data-test="modal">
+              </span>
               </label>
                 <span class="visually-hidden">Доп.информация</span>
-              </button>
               <div class="kids-plus-minus-button">
                 <button class="minus-button" type="button">
                   <span class="visually-hidden">Уменьшить</span>
@@ -220,8 +219,8 @@
                   <span class="visually-hidden">Увеличить</span>
                 </button>
               </div>
+              <button class="search-blue-button" type="submit">Найти</button>
             </form>
-            <button class="search-blue-button" type="button">Найти</button>
           </section>
         </div>
       </div>
