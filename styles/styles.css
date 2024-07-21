@@ -325,6 +325,11 @@ body {
   color:inherit;
 }
 
+.title-desk-cafe .advantages-list-item-description,
+.title-desk-cafe .advantages-list-item-description {
+  color: rgba(255, 255, 255, 1)
+}
+
 .advantages-list-item:nth-child(1) {
   display: grid;
   grid-template-columns: 1fr 1fr;
